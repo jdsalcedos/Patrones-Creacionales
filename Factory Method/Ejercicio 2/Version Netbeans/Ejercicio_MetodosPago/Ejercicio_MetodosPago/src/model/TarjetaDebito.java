@@ -17,8 +17,8 @@ public class TarjetaDebito extends MetodoPago{
     }
 
     @Override
-    public String realizarPago(float costo){
-        return "Realizando pago de "+this.costo+" dolares con tarjeta debito";
+    public String realizarPago(){
+        return "Realizando pago de "+costo+" dolares con tarjeta debito";
     }
 
     @Override

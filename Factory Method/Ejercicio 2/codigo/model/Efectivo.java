@@ -17,8 +17,8 @@ public class Efectivo extends MetodoPago{
     }
 
     @Override
-    public String realizarPago(float costo){
-        return "Realizando pago de "+this.costo+" dolares con efectivo";
+    public String realizarPago(){
+        return "Realizando pago de "+costo+" dolares con efectivo";
     }
 
     @Override

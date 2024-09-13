@@ -25,15 +25,15 @@ public class Controlador{
         String tipo = "";
         float costo = 0;
 
-        vista.mostrarInfo("Digite los datos del metodo de pago");
+        vista.mostrarInfo("DATOS DEL METODO DE PAGO");
 
         tipo = vista.leerDatoStr("\t" + "Digite el tipo de metodo de pago");
         costo = vista.leerDatoFloat("\t" + "Digite el costo total de lo que va a comprar");
 
         MetodoPagoFactory fabrica = new MetodoPagoCreador();
-        MetodoPago mtp = fabrica.crearMetodoPago(tipo, costo);
+        MetodoPago mtp = fabrica.crearMetodoPago(tipo.toLowerCase(), costo);
 
-        vista.mostrarInfo("Pago: " + mtp.realizarPago(costo));
+        vista.mostrarInfo("Pago: " + mtp.realizarPago());
         vista.mostrarInfo("Datos del metodo de pago: " + mtp.consultarInfo());
     }
 }

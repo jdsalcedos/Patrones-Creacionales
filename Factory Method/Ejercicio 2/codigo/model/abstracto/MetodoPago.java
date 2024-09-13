@@ -18,7 +18,7 @@ public abstract class MetodoPago{
         this.costo = costo;
     }
 
-    public abstract String realizarPago(float costo);
+    public abstract String realizarPago();
     public abstract String consultarInfo();
 
 }
