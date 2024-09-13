@@ -1,3 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package view;
+
+/**
+ *
+ * @author juand
+ */
 import java.util.Scanner;
 
 public class VistaConsola{
@@ -19,8 +29,8 @@ public class VistaConsola{
         return dato;
     }
 
-    public float leerDatoInt(String msj){
-        Int dato = 0;
+    public float leerDatoFloat(String msj){
+        float dato = 0;
         System.out.println(msj);
         dato = sc.nextFloat();
         return dato;

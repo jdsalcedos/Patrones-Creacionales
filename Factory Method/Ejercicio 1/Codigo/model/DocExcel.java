@@ -1,5 +1,14 @@
-import model.abstracto.Documento;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package model;
 
+import model.abstracto.Documento;
+/**
+ *
+ * @author juand
+ */
 public class DocExcel extends Documento{
     
     public DocExcel(String nombre, String tipo, float size){
