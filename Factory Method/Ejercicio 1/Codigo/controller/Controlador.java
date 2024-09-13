@@ -1,7 +1,3 @@
-import model.abstracto.*;
-import model.concretoCreador.*;
-import view.VistaConsola;
-
 public class Controlador{
     private VistaConsola vista;
     
