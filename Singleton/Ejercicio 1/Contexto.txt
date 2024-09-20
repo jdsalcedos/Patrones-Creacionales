@@ -1,0 +1,4 @@
+Contexto:
+
+Se esta creando una aplicación la cual tiene persistencia en base de datos. Se recomienda usar Singleton 
+para simplificar la conexión a la base de datos.
