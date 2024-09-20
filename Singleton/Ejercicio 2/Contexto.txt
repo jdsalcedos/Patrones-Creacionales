@@ -1,0 +1,4 @@
+Contexto:
+
+Se tiene una configuración global de una página de noticias donde
+esta el idioma, el color de fondo y las preferencias del público. 
