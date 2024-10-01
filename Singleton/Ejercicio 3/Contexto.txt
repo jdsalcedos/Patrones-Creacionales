@@ -1,0 +1,4 @@
+Contexto: 
+
+Un restaurante necesita una forma de desplegar su menu para que todos los clientes lo
+puedan revisar y asi ordenar.
