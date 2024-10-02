@@ -4,13 +4,14 @@
  */
 package controller;
 
+import java.io.IOException;
 
 /**
  *
  * @author juand
  */
 public class ApiMain {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Controller control;
         control = new Controller();
         control.run();

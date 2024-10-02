@@ -18,7 +18,7 @@ public class Director {
         this.computadorBuilder = computadorBuilder;
     }
 
-    public void construirCasa() {
+    public void construirPc() {
         computadorBuilder.construirProcesador();
         computadorBuilder.construirRam();
         computadorBuilder.construirDiscoDuro();

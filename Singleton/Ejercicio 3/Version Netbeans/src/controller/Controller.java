@@ -5,7 +5,7 @@
 package controller;
 
 import java.io.IOException;
-import model.ConfigSingleton;
+import model.MenuSingleton;
 import view.VistaConsola;
 
 /**
@@ -13,15 +13,15 @@ import view.VistaConsola;
  * @author juand
  */
 public class Controller {
-    
+
     private VistaConsola vista;
 
     public Controller() {
         vista = new VistaConsola();
     }
-    
-    public void run() throws IOException{
-        ConfigSingleton conf = ConfigSingleton.getInstancia();
+
+    public void run() throws IOException {
+        MenuSingleton conf = MenuSingleton.getInstancia();
         conf.leerProperties("src\\model\\config.properties");
         vista.mostrarInfo(conf.getProperty("Entrada1"));
         vista.mostrarInfo(conf.getProperty("Entrada2"));
@@ -32,6 +32,5 @@ public class Controller {
         vista.mostrarInfo(conf.getProperty("Bebida1"));
         vista.mostrarInfo(conf.getProperty("Bebida2"));
     }
-    
-    
+
 }

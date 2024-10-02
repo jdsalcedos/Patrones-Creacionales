@@ -16,30 +16,26 @@ import java.util.logging.Logger;
  * @author juand
  */
 public class MenuSingleton {
-    
+
     private static MenuSingleton instancia;
     private Properties properties;
 
     private MenuSingleton() {
         properties = new Properties();
     }
-    
-    public static MenuSingleton getInstancia(){
-        if(instancia == null){
+
+    public static MenuSingleton getInstancia() {
+        if (instancia == null) {
             instancia = new MenuSingleton();
         }
         return instancia;
     }
-    
-    public void leerProperties(String propPath) throws IOException{
-        try {
-            properties.load(new FileInputStream(propPath));
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(ConfigSingleton.class.getName()).log(Level.SEVERE, null, ex);
-        }
+
+    public void leerProperties(String propPath) throws IOException {
+        properties.load(new FileInputStream(propPath));
     }
-    
-    public String getProperty(String key){
+
+    public String getProperty(String key) {
         return properties.getProperty(key);
     }
 }

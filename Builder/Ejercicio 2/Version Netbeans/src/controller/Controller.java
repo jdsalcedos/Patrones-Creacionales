@@ -30,21 +30,21 @@ public class Controller {
             if (op == 1) {
                 ComputadorBuilder builder = new PcOficinaBuilder();
                 Director director = new Director(builder);
-                director.construirCasa();
-                Computador casa = builder.obtenerComputador();
-                vista.mostrarDatos(casa.toString());
+                director.construirPc();
+                Computador pc = builder.obtenerComputador();
+                vista.mostrarDatos(pc.toString());
             } else if (op == 2) {
                 ComputadorBuilder builder = new PcGamingBuilder();
                 Director director = new Director(builder);
-                director.construirCasa();
-                Computador casa = builder.obtenerComputador();
-                vista.mostrarDatos(casa.toString());
+                director.construirPc();
+                Computador pc = builder.obtenerComputador();
+                vista.mostrarDatos(pc.toString());
             } else if (op == 3) {
                 ComputadorBuilder builder = new PcPortatilBuilder();
                 Director director = new Director(builder);
-                director.construirCasa();
-                Computador casa = builder.obtenerComputador();
-                vista.mostrarDatos(casa.toString());
+                director.construirPc();
+                Computador pc = builder.obtenerComputador();
+                vista.mostrarDatos(pc.toString());
             }
             op = menu();
         }
