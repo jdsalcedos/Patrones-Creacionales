@@ -1,0 +1,4 @@
+Contexto:
+
+Se requiere un programa que permita crear 2 tipos de Robots: domestico e industrial.
+Cada uno tiene sus características propias.
